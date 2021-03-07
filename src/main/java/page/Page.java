@@ -42,13 +42,11 @@ public abstract class Page implements Render {
         this.pageid = id;
     }
 
-    public abstract void createPage();
+    public abstract void createPage(Document doc);
 
-    public abstract void updatePage();
+    public abstract void updatePage(Document doc);
 
-    public abstract void removePage();
-
-    public abstract void getPage();
+    public abstract void removePage(Document doc);
 
     // Setters and getters to be used by sub-classes
     public String getTimestamp() {
